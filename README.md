@@ -21,4 +21,16 @@ http://www.zstd.net
 ---
 
 This repository provides an implementation of Zstandard compression
-filter plugin for HDF5.
+filter plugin for HDF5 with the assigned filter code 32015.
+
+---
+
+## Build
+
+This plugin can be built with cmake and installed as shared library to `/usr/local/hdf5/lib/plugin` (or a custom path).
+
+```bash
+cmake .
+make
+sudo make install
+```
